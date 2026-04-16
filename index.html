@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto École Anouar — Permis de Conduire</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="ri-steering-2-line"></i></span>
+        <span class="logo-text" data-fr="Auto École Anouar" data-ar="مدرسة أنوار لتعليم السياقة">Auto École Anouar</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services" data-fr="Services" data-ar="الخدمات">Services</a></li>
+        <li><a href="#why-us" data-fr="Pourquoi Nous" data-ar="لماذا نحن">Pourquoi Nous</a></li>
+        <li><a href="#gallery" data-fr="Galerie" data-ar="معرض">Galerie</a></li>
+        <li><a href="#testimonials" data-fr="Témoignages" data-ar="شهادات">Témoignages</a></li>
+        <li><a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle">
+          <span class="lang-fr">🇲🇦 AR</span>
+          <span class="lang-ar" style="display:none">🇲🇦 FR</span>
+        </button>
+        <button class="hamburger" id="hamburger"><i class="ri-menu-3-line"></i></button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#services" data-fr="Services" data-ar="الخدمات">Services</a></li>
+        <li><a href="#why-us" data-fr="Pourquoi Nous" data-ar="لماذا نحن">Pourquoi Nous</a></li>
+        <li><a href="#gallery" data-fr="Galerie" data-ar="معرض">Galerie</a></li>
+        <li><a href="#testimonials" data-fr="Témoignages" data-ar="شهادات">Témoignages</a></li>
+        <li><a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-shape shape1"></div>
+      <div class="hero-shape shape2"></div>
+      <div class="hero-shape shape3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-down">
+        <i class="ri-map-pin-2-line"></i>
+        <span data-fr="Rabat, Maroc" data-ar="تمارة، المغرب">Témara, Maroc</span>
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        <span data-fr="Obtenez Votre" data-ar="احصل على">Obtenez Votre</span>
+        <span class="hero-highlight" data-fr="Permis de Conduire" data-ar="رخصة القيادة">Permis de Conduire</span>
+        <span data-fr="en Toute Confiance" data-ar="بكل ثقة">en Toute Confiance</span>
+      </h1>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="200"
+        data-fr="Formation professionnelle, moniteurs certifiés, taux de réussite exceptionnel. Votre succès est notre priorité."
+        data-ar="تكوين احترافي، مدربون معتمدون، نسبة نجاح استثنائية. نجاحك هو أولويتنا.">
+        Formation professionnelle, moniteurs certifiés, taux de réussite exceptionnel. Votre succès est notre priorité.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+        <a href="#contact" class="btn btn-primary">
+          <span data-fr="S'inscrire Maintenant" data-ar="سجل الآن">S'inscrire Maintenant</span>
+          <i class="ri-arrow-right-line"></i>
+        </a>
+        <a href="https://wa.me/212672297756" class="btn btn-outline" target="_blank">
+          <i class="ri-whatsapp-line"></i>
+          <span data-fr="WhatsApp" data-ar="واتساب">WhatsApp</span>
+        </a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+        <div class="hero-stat">
+          <span class="stat-num">+500</span>
+          <span class="stat-label" data-fr="Élèves Formés" data-ar="طلاب تخرجوا">Élèves Formés</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">96%</span>
+          <span class="stat-label" data-fr="Taux de Réussite" data-ar="نسبة النجاح">Taux de Réussite</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label" data-fr="Ans d'Expérience" data-ar="سنوات خبرة">Ans d'Expérience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+      <div class="car-card">
+        <div class="car-card-inner">
+          <div class="car-icon-wrap"><i class="ri-car-line"></i></div>
+          <div class="car-card-text">
+            <span data-fr="Catégorie B" data-ar="الفئة B">Catégorie B</span>
+            <small data-fr="Voiture particulière" data-ar="سيارة خاصة">Voiture particulière</small>
+          </div>
+        </div>
+      </div>
+      <div class="road-anim">
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+      </div>
+      <div class="permit-badge">
+        <i class="ri-medal-line"></i>
+        <span data-fr="Certifié" data-ar="معتمد">Certifié</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#services"><i class="ri-arrow-down-line"></i></a>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-fr="Nos Formations" data-ar="تكويناتنا">Nos Formations</span>
+        <h2 data-fr="Catégories de Permis" data-ar="فئات رخصة القيادة">Catégories de Permis</h2>
+        <p data-fr="Choisissez la formation adaptée à vos besoins avec nos experts certifiés."
+           data-ar="اختر التكوين المناسب لاحتياجاتك مع خبرائنا المعتمدين.">
+          Choisissez la formation adaptée à vos besoins avec nos experts certifiés.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="ri-car-fill"></i></div>
+          <div class="service-badge">B</div>
+          <h3 data-fr="Permis B" data-ar="رخصة B">Permis B</h3>
+          <p data-fr="Voitures particulières et véhicules légers jusqu'à 3,5 tonnes. Formation complète code et conduite."
+             data-ar="السيارات الخاصة والمركبات الخفيفة حتى 3.5 طن. تكوين شامل للنظرية والقيادة.">
+            Voitures particulières et véhicules légers jusqu'à 3,5 tonnes.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> <span data-fr="Code de la route" data-ar="قانون المرور">Code de la route</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="30h de conduite" data-ar="30 ساعة قيادة">30h de conduite</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="Suivi personnalisé" data-ar="متابعة شخصية">Suivi personnalisé</span></li>
+          </ul>
+          <a href="#contact" class="service-btn" data-fr="S'inscrire" data-ar="سجل الآن">S'inscrire</a>
+        </div>
+
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="ri-motorbike-fill"></i></div>
+          <div class="service-badge">A</div>
+          <h3 data-fr="Permis A" data-ar="رخصة A">Permis A</h3>
+          <p data-fr="Motos et scooters. Formation spécifique pour la conduite sécurisée à deux roues."
+             data-ar="الدراجات النارية والسكوتر. تكوين متخصص للقيادة الآمنة على عجلتين.">
+            Motos et scooters. Formation spécifique pour la conduite sécurisée à deux roues.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> <span data-fr="Théorie avancée" data-ar="نظرية متقدمة">Théorie avancée</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="Maniabilité moto" data-ar="قابلية التحكم">Maniabilité moto</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="Conduite sur route" data-ar="قيادة على الطريق">Conduite sur route</span></li>
+          </ul>
+          <a href="#contact" class="service-btn" data-fr="S'inscrire" data-ar="سجل الآن">S'inscrire</a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="ri-truck-fill"></i></div>
+          <div class="service-badge">C</div>
+          <h3 data-fr="Permis C" data-ar="رخصة C">Permis C</h3>
+          <p data-fr="Poids lourds et camions. Devenez professionnel du transport routier de marchandises."
+             data-ar="الشاحنات الثقيلة. أصبح محترفاً في نقل البضائع عبر الطرق.">
+            Poids lourds et camions. Devenez professionnel du transport de marchandises.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> <span data-fr="Conduite poids lourd" data-ar="قيادة الشاحنات">Conduite poids lourd</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="Règles transport" data-ar="قواعد النقل">Règles transport</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="Sécurité routière" data-ar="السلامة المرورية">Sécurité routière</span></li>
+          </ul>
+          <a href="#contact" class="service-btn" data-fr="S'inscrire" data-ar="سجل الآن">S'inscrire</a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="ri-bus-fill"></i></div>
+          <div class="service-badge">D</div>
+          <h3 data-fr="Permis D" data-ar="رخصة D">Permis D</h3>
+          <p data-fr="Transport en commun et bus. Formation pour conducteurs professionnels de passagers."
+             data-ar="وسائل النقل العام والحافلات. تكوين لسائقي المسافرين المحترفين.">
+            Transport en commun et bus. Formation pour conducteurs professionnels.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> <span data-fr="Transport passagers" data-ar="نقل الركاب">Transport passagers</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="Conduite bus" data-ar="قيادة الحافلات">Conduite bus</span></li>
+            <li><i class="ri-check-line"></i> <span data-fr="Gestion urgences" data-ar="إدارة الطوارئ">Gestion urgences</span></li>
+          </ul>
+          <a href="#contact" class="service-btn" data-fr="S'inscrire" data-ar="سجل الآن">S'inscrire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WHY US ====== -->
+  <section class="why-us" id="why-us">
+    <div class="why-bg-shape"></div>
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-text" data-aos="fade-right">
+          <span class="section-tag" data-fr="Notre Différence" data-ar="ميزتنا">Notre Différence</span>
+          <h2 data-fr="Pourquoi Choisir Auto École Anouar ?" data-ar="لماذا تختار مدرسة أنوار؟">
+            Pourquoi Choisir Auto École Anouar ?
+          </h2>
+          <p data-fr="Depuis plus de 10 ans, nous formons des conducteurs responsables et compétents. Notre approche pédagogique unique garantit votre succès à l'examen."
+             data-ar="منذ أكثر من 10 سنوات، نقوم بتكوين سائقين مسؤولين وكفوئين. نهجنا التعليمي الفريد يضمن نجاحك في الامتحان.">
+            Depuis plus de 10 ans, nous formons des conducteurs responsables et compétents.
+          </p>
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="why-icon"><i class="ri-award-line"></i></div>
+              <div>
+                <h4 data-fr="Moniteurs Certifiés" data-ar="مدربون معتمدون">Moniteurs Certifiés</h4>
+                <p data-fr="Tous nos moniteurs sont diplômés et expérimentés." data-ar="جميع مدربينا حاصلون على شهادات وذوو خبرة.">Tous nos moniteurs sont diplômés et expérimentés.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="ri-car-wash-line"></i></div>
+              <div>
+                <h4 data-fr="Véhicules Modernes" data-ar="مركبات حديثة">Véhicules Modernes</h4>
+                <p data-fr="Flotte récente entretenue et équipée de double commande." data-ar="أسطول حديث مجهز بنظام التحكم المزدوج.">Flotte récente entretenue et équipée de double commande.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="ri-time-line"></i></div>
+              <div>
+                <h4 data-fr="Horaires Flexibles" data-ar="مواعيد مرنة">Horaires Flexibles</h4>
+                <p data-fr="Cours du matin au soir, 7 jours sur 7." data-ar="دروس من الصباح حتى المساء، 7 أيام في الأسبوع.">Cours du matin au soir, 7 jours sur 7.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-stats" data-aos="fade-left">
+          <div class="stat-card" data-count="500">
+            <div class="stat-circle">
+              <span class="counter">0</span><span>+</span>
+            </div>
+            <p data-fr="Élèves Formés" data-ar="طلاب تخرجوا">Élèves Formés</p>
+          </div>
+          <div class="stat-card" data-count="96">
+            <div class="stat-circle">
+              <span class="counter">0</span><span>%</span>
+            </div>
+            <p data-fr="Taux de Réussite" data-ar="نسبة النجاح">Taux de Réussite</p>
+          </div>
+          <div class="stat-card" data-count="10">
+            <div class="stat-circle">
+              <span class="counter">0</span><span>+</span>
+            </div>
+            <p data-fr="Années d'Expérience" data-ar="سنوات من الخبرة">Années d'Expérience</p>
+          </div>
+          <div class="stat-card" data-count="4">
+            <div class="stat-circle">
+              <span class="counter">0</span><span></span>
+            </div>
+            <p data-fr="Types de Permis" data-ar="أنواع الرخص">Types de Permis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY ====== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-fr="Notre École" data-ar="مدرستنا">Notre École</span>
+        <h2 data-fr="Galerie Photos" data-ar="معرض الصور">Galerie Photos</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g-tall" data-aos="zoom-in" data-aos-delay="0">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#1a3a5c,#2e7d32)">
+            <i class="ri-car-line"></i>
+            <div class="gallery-overlay">
+              <span data-fr="Nos Véhicules" data-ar="مركباتنا">Nos Véhicules</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#b71c1c,#e64a19)">
+            <i class="ri-building-4-line"></i>
+            <div class="gallery-overlay">
+              <span data-fr="Nos Locaux" data-ar="مقراتنا">Nos Locaux</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#4a148c,#1565c0)">
+            <i class="ri-graduation-cap-line"></i>
+            <div class="gallery-overlay">
+              <span data-fr="Cours Théorie" data-ar="دروس النظرية">Cours Théorie</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item g-wide" data-aos="zoom-in" data-aos-delay="200">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#006064,#00695c)">
+            <i class="ri-road-map-line"></i>
+            <div class="gallery-overlay">
+              <span data-fr="Conduite sur Route" data-ar="القيادة على الطريق">Conduite sur Route</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#e65100,#f9a825)">
+            <i class="ri-trophy-line"></i>
+            <div class="gallery-overlay">
+              <span data-fr="Remise de Permis" data-ar="تسليم الرخص">Remise de Permis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-fr="Avis Clients" data-ar="آراء العملاء">Avis Clients</span>
+        <h2 data-fr="Ce Que Disent Nos Élèves" data-ar="ما يقوله طلابنا">Ce Que Disent Nos Élèves</h2>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p data-fr="Excellente auto école ! J'ai obtenu mon permis B du premier coup grâce aux cours de qualité et aux moniteurs patients. Je recommande vivement !"
+               data-ar="مدرسة قيادة ممتازة! حصلت على رخصة B من المرة الأولى بفضل الدروس الجيدة والمدربين الصبورين. أوصي بها بشدة!">
+              Excellente auto école ! J'ai obtenu mon permis B du premier coup grâce aux cours de qualité et aux moniteurs patients.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div>
+                <strong>Ahmed B.</strong>
+                <span data-fr="Permis B — 2024" data-ar="رخصة B — 2024">Permis B — 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p data-fr="Formation très sérieuse et professionnelle. Les moniteurs expliquent bien et sont très pédagogues. Merci Auto École Anouar !"
+               data-ar="تكوين جاد ومهني جداً. المدربون يشرحون جيداً ولديهم أسلوب تعليمي رائع. شكراً لمدرسة أنوار!">
+              Formation très sérieuse et professionnelle. Les moniteurs expliquent bien et sont très pédagogues.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div>
+                <strong>Sara M.</strong>
+                <span data-fr="Permis B — 2024" data-ar="رخصة B — 2024">Permis B — 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p data-fr="J'ai eu mon permis C en un temps record ! L'équipe est professionnelle et les véhicules sont en excellent état. Très satisfait !"
+               data-ar="حصلت على رخصة C في وقت قياسي! الفريق محترف والمركبات في حالة ممتازة. راضٍ جداً!">
+              J'ai eu mon permis C en un temps record ! L'équipe est professionnelle et les véhicules sont en excellent état.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">Y</div>
+              <div>
+                <strong>Youssef K.</strong>
+                <span data-fr="Permis C — 2023" data-ar="رخصة C — 2023">Permis C — 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p data-fr="Meilleure auto école de Rabat ! Ambiance chaleureuse, moniteurs compétents, prix raisonnables. Je conseille à tout le monde !"
+               data-ar="أفضل مدرسة قيادة في الرباط! أجواء دافئة، مدربون كفوئون، أسعار معقولة. أنصح الجميع بها!">
+              Meilleure auto école de Rabat ! Ambiance chaleureuse, moniteurs compétents, prix raisonnables.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">F</div>
+              <div>
+                <strong>Fatima Z.</strong>
+                <span data-fr="Permis A — 2024" data-ar="رخصة A — 2024">Permis A — 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn"><i class="ri-arrow-left-line"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn"><i class="ri-arrow-right-line"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-fr="Nous Contacter" data-ar="تواصل معنا">Nous Contacter</span>
+        <h2 data-fr="Inscrivez-vous Maintenant" data-ar="سجل الآن">Inscrivez-vous Maintenant</h2>
+        <p data-fr="Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais."
+           data-ar="املأ النموذج أدناه وسنتواصل معك في أقرب وقت ممكن.">
+          Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais.
+        </p>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+            <div>
+              <h4 data-fr="Adresse" data-ar="العنوان">Adresse</h4>
+              <p>Auto École Anouar, Rabat, Maroc</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-phone-line"></i></div>
+            <div>
+              <h4 data-fr="Téléphone" data-ar="الهاتف">Téléphone</h4>
+              <p>+212 672 297 756</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-time-line"></i></div>
+            <div>
+              <h4 data-fr="Horaires" data-ar="ساعات العمل">Horaires</h4>
+              <p data-fr="Lun–Sam : 8h–20h" data-ar="الإثنين–السبت: 8ص–8م">Lun–Sam : 8h–20h</p>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.188939206056!2d-6.896989!3d33.9306635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7131b79365ee9%3A0x3ffd4ff2faad23e3!2sAuto%20ecole%20anouar!5e1!3m2!1sfr!2sma!4v1776352713786!5m2!1sfr!2sma" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label data-fr="Nom Complet" data-ar="الاسم الكامل">Nom Complet</label>
+              <input type="text" id="name" name="name" required
+                data-placeholder-fr="Votre nom complet"
+                data-placeholder-ar="اسمك الكامل"
+                placeholder="Votre nom complet" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-fr="Téléphone" data-ar="الهاتف">Téléphone</label>
+                <input type="tel" id="phone" name="phone" required
+                  data-placeholder-fr="Votre numéro"
+                  data-placeholder-ar="رقمك"
+                  placeholder="Votre numéro" />
+              </div>
+              <div class="form-group">
+                <label data-fr="Email" data-ar="البريد الإلكتروني">Email</label>
+                <input type="email" id="email" name="email" required
+                  data-placeholder-fr="Votre email"
+                  data-placeholder-ar="بريدك الإلكتروني"
+                  placeholder="Votre email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-fr="Message" data-ar="الرسالة">Message</label>
+              <textarea id="message" name="message" rows="5" required
+                data-placeholder-fr="Votre message ou question..."
+                data-placeholder-ar="رسالتك أو سؤالك..."
+                placeholder="Votre message ou question..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text" data-fr="Envoyer le Message" data-ar="إرسال الرسالة">Envoyer le Message</span>
+              <span class="btn-loading" style="display:none"><i class="ri-loader-4-line spin"></i></span>
+            </button>
+            <div id="formMsg" class="form-message" style="display:none"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon"><i class="ri-steering-2-line"></i></span>
+            <span class="logo-text" data-fr="Auto École Anouar" data-ar="مدرسة أنوار">Auto École Anouar</span>
+          </a>
+          <p data-fr="Votre partenaire de confiance pour l'obtention du permis de conduire à Rabat."
+             data-ar="شريكك الموثوق للحصول على رخصة القيادة في الرباط.">
+            Votre partenaire de confiance pour l'obtention du permis de conduire à Rabat.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/212672297756" target="_blank"><i class="ri-whatsapp-line"></i></a>
+            <a href="#"><i class="ri-facebook-line"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Navigation" data-ar="التنقل">Navigation</h4>
+          <ul>
+            <li><a href="#services" data-fr="Services" data-ar="الخدمات">Services</a></li>
+            <li><a href="#why-us" data-fr="Pourquoi Nous" data-ar="لماذا نحن">Pourquoi Nous</a></li>
+            <li><a href="#gallery" data-fr="Galerie" data-ar="معرض">Galerie</a></li>
+            <li><a href="#testimonials" data-fr="Témoignages" data-ar="شهادات">Témoignages</a></li>
+            <li><a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Permis" data-ar="الرخص">Permis</h4>
+          <ul>
+            <li><a href="#services" data-fr="Permis B" data-ar="رخصة B">Permis B</a></li>
+            <li><a href="#services" data-fr="Permis A" data-ar="رخصة A">Permis A</a></li>
+            <li><a href="#services" data-fr="Permis C" data-ar="رخصة C">Permis C</a></li>
+            <li><a href="#services" data-fr="Permis D" data-ar="رخصة D">Permis D</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-fr="Contact" data-ar="اتصل بنا">Contact</h4>
+          <p><i class="ri-map-pin-line"></i> Rabat, Maroc</p>
+          <p><i class="ri-phone-line"></i> +212 672 297 756</p>
+          <p><i class="ri-mail-line"></i> mouadelotmani12@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-fr="© 2025 Auto École Anouar. Tous droits réservés." data-ar="© 2025 مدرسة أنوار. جميع الحقوق محفوظة.">
+          © 2025 Auto École Anouar. Tous droits réservés.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/212672297756" class="whatsapp-float" target="_blank" title="WhatsApp">
+    <i class="ri-whatsapp-line"></i>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop"><i class="ri-arrow-up-line"></i></button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
